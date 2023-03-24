@@ -1,0 +1,32 @@
+.percentage{
+    display: grid;
+    place-content: center;
+
+    font-family: 'Caveat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8675rem;
+    line-height: 6.1rem;
+
+    height: 100vh;
+    color: #2E2E2E;
+}
+
+/* .school,
+.frame{
+    position:fixed;
+    bottom: -1em;
+    left: 50%;
+    transform: translate(-49%);
+    height: 60%;
+} */
+
+/* .school{
+    height: 59.8%;
+}*/
+
+.frame{
+    position: absolute;
+    left:0;
+    height: 70%;
+} 

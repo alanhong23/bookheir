@@ -1,0 +1,25 @@
+{
+  "name": "dev",
+  "scripts": {
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start"
+  },
+  "type": "module",
+  "devDependencies": {
+    "solid-start-node": "^0.2.23",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "@solidjs/meta": "^0.28.2",
+    "@solidjs/router": "^0.7.0",
+    "pnpm": "^7.29.0",
+    "rollup": "^3.18.0",
+    "solid-js": "^1.6.12",
+    "solid-start": "^0.2.23",
+    "undici": "^5.20.0"
+  },
+  "engines": {
+    "node": ">=16.8"
+  }
+}

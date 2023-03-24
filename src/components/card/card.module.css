@@ -1,0 +1,72 @@
+.container h2 {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+    font-weight: 400;
+
+    color: #000000;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr repeat(2, min-content);
+    grid-template-areas:
+        "image image"
+        "title year"
+        "price heart";
+
+    row-gap: 0.6rem;
+}
+
+.image {
+    grid-area: image;
+}
+
+.image img {
+    width: clamp(16.17rem, 16.7vw + 1rem, 30.6rem);
+    height: clamp(19.23rem, 20vw + 1rem, 36.39rem);
+    /* height: 31.42rem; */
+    object-fit: cover;
+}
+
+.title {
+    grid-area: title;
+    text-decoration: none;
+}
+
+.title h2 {
+    font-size: clamp(1.2rem, 1vw + 0.05rem, 1.7rem);
+}
+
+.year {
+    grid-area: year;
+    font-size: clamp(1rem, 0.7vw + 0.05rem, 1.3rem);
+}
+
+.price {
+    grid-area: price;
+    font-size: clamp(1.7rem, 1.1vw + 0.05rem, 2rem);
+}
+
+.heart {
+    grid-area: heart;
+    height: clamp(1.2rem, 1vw + 0.1rem, 1.6rem);
+    justify-self: end;
+    cursor: pointer;
+}
+
+.heart:hover {
+    fill: rgb(241, 72, 100);
+    stroke: rgb(241, 72, 100);
+}
+
+.title,
+.price {
+    justify-self: start;
+}
+
+.year,
+.heart {
+    justify-self: end;
+}

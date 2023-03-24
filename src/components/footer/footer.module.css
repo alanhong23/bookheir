@@ -1,0 +1,35 @@
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #3c1f0b;
+    display: grid;
+    grid-template-rows: repeat(4, fit-content);
+    grid-row-gap: 1rem;
+    place-items: center;
+    justify-items: start;
+    padding: 10.18rem 0 10.18rem 16rem;
+    bottom: 0;
+    margin-top: 50vh;
+}
+
+footer div {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    place-items: center;
+    column-gap: 3.88rem;
+}
+
+footer div h1 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5.8rem;
+    line-height: 7.1rem;
+    letter-spacing: 0.16em;
+    color: #ffffff;
+}
+
+footer div img{
+    height: 3.51rem;
+}

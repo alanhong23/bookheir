@@ -1,0 +1,170 @@
+.container {
+    display: grid;
+    place-items: center;
+    place-content: start;
+    grid-template-columns: max-content 1fr;
+    grid-template-rows: repeat(2, fit-content);
+    row-gap: 6rem;
+    column-gap: 4.24rem;
+    grid-template-areas:
+        "details profile"
+        "products products_card";
+    height: 100vh;
+    margin: 6rem 16rem 0 16rem;
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container h4 {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+}
+
+.details,
+.products {
+    font-weight: 300;
+    font-size: 3rem;
+    color: #56331a;
+    margin: 0 2.8rem;
+}
+
+.details_container {
+    grid-area: details;
+}
+
+.products_container {
+    grid-area: products;
+}
+
+.profile {
+    grid-area: profile;
+    display: grid;
+    place-items: start;
+    place-self: center;
+    align-items: center;
+    row-gap: 1.55rem;
+    grid-template-columns: repeat(4, fit-content);
+    grid-template-rows: repeat(4, max-content);
+    grid-template-areas:
+        "profile_pic username empty empty"
+        "profile_pic email empty empty"
+        "profile_pic whatsapp whatsapp_edit whatsapp_delete"
+        "profile_pic messenger messenger_edit messenger_delete";
+}
+
+.username {
+    grid-area: username;
+}
+
+.email {
+    grid-area: email;
+}
+
+.whatsapp {
+    grid-area: whatsapp;
+}
+
+.messenger {
+    grid-area: messenger;
+}
+
+.whatsapp_edit {
+    grid-area: whatsapp_edit;
+}
+
+.whatsapp_delete {
+    grid-area: whatsapp_delete;
+}
+
+.messenger_edit {
+    grid-area: messenger_edit;
+}
+
+.messenger_delete {
+    grid-area: messenger_delete;
+}
+
+.whatsapp_edit,
+.messenger_edit {
+    margin-right: 1rem;
+    margin-left: 7rem;
+}
+
+.profile_pic {
+    grid-area: profile_pic;
+    width: 15rem;
+    height: 15rem;
+    background: #56331a;
+    border-radius: 5.45rem;
+    place-self: center;
+    margin-right: 5rem;
+}
+
+.profile h2 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+}
+
+.profile h1 {
+    font-weight: 400;
+    font-size: 1.84rem;
+    color: #56331a;
+}
+
+.details_container,
+.products_container {
+    align-self: start;
+    justify-self: end;
+    display: flex;
+}
+
+.line1,
+.line2 {
+    height: max-content;
+}
+
+.container h3,
+.container h4 {
+    font-weight: 400;
+    font-size: 1.36rem;
+}
+
+.container h3 {
+    text-decoration-line: underline;
+    color: #2a5eac;
+}
+
+.container h4 {
+    color: #bb6363;
+}
+
+.products_card {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: min-content;
+    overflow-x: auto;
+    column-gap: 3rem;
+    padding-bottom: 1rem;
+}
+
+.products_card::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+.products_card::-webkit-scrollbar {
+    height: 4px;
+}
+
+.products_card::-webkit-scrollbar-thumb {
+    background-color: #56331a;
+    border-radius: 4px;
+}
+
+/* special setting for firefox :/ */
+@-moz-document url-prefix() {
+    .products_card {
+        scrollbar-color: #56331a #fcf8f1;
+    }
+}

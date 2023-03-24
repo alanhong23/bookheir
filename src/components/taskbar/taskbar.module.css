@@ -1,0 +1,203 @@
+.taskbar{
+    display:grid;
+    grid-auto-flow: row;
+    gap: 0.6rem;
+    background: rgba(151, 91, 48, 0.8);
+    border-radius: 0.8rem;
+    justify-items: center;
+    position: fixed;
+    bottom: 2.24rem;
+    padding: 0.6rem;
+
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    grid-auto-flow: column;
+    /* height: 5.36rem; */
+    gap: 0.6rem;
+}
+
+.search,
+.on_search {
+    background: #6c4b33;
+}
+
+.search,
+.follow,
+.on_search svg {
+    width: 4.2rem;
+    height: 4.2rem;
+    cursor: pointer;
+}
+
+.search,
+.follow,
+.option {
+    border-radius: 0.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.follow,
+.option div {
+    background: #8f542a;
+}
+
+.option {
+    grid-template-columns: repeat(4, 10.4rem);
+}
+
+.option svg {
+    height: 0.7rem;
+}
+
+.option div {
+    height: 4.2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 2rem;
+    place-items: center;
+    place-content: center;
+    cursor: pointer;
+}
+
+.search svg,
+.follow svg {
+    height: 1.45rem;
+    pointer-events: none;
+}
+
+.on_search svg {
+    height: 1.45rem;
+}
+
+.option h1 {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #d0b29c;
+}
+
+.grade {
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.other {
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.sort,
+.subject,
+.grade,
+.active {
+    border-right: 0.1rem solid #804a23;
+}
+
+.on_search {
+    width: 51.2rem;
+    height: 4.2rem;
+    border-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: 0 1.3rem;
+}
+
+.on_search_display_none {
+    display: none;
+}
+
+.follow svg:hover {
+    fill: white;
+}
+
+.follow:hover,
+.option div:hover,
+.active {
+    background: #804820 !important;
+}
+
+.option div > * {
+    pointer-events: none;
+}
+
+.option div:hover,
+.active {
+    border-bottom: 0.36rem solid #ffffff;
+}
+
+.option div:hover h1,
+.active h1 {
+    color: white;
+}
+
+.option div:hover svg,
+.active svg {
+    stroke: white;
+    rotate: 180deg;
+}
+
+.search_text {
+    border-style: none;
+    font-family: "Noto Sans SC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.86rem;
+    outline: none;
+    border-bottom: 0.18rem solid #7c5e49;
+    width: 43.5rem;
+    background: none;
+    color: white;
+    padding: 0.1rem 0.3rem;
+}
+
+.search_text::placeholder {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.86rem;
+    color: #b77536;
+}
+
+.option_buttons {
+    background: #804820;
+    border-radius: 0.8rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.option_buttons div {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13.6189px;
+    display: flex;
+    align-items: center;
+
+    color: #bc977d;
+    border-bottom: 0.3rem solid #bc977d;
+    border-radius: 0.5rem;
+    width: 11rem;
+    height: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option_buttons div:hover{
+    color: white;
+    border-bottom: 0.3rem solid #FFFFFF;
+    transform: translateY(-5%);
+}

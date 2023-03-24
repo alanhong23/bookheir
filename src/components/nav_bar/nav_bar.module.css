@@ -1,0 +1,61 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, 4rem);
+    place-items: center;
+    padding: 1rem 16rem;
+    /* margin: 0 16rem; */
+    grid-gap: 2.7rem;
+    /* position: fixed; */
+    /* top: 0; */
+    width: 100%;
+    z-index: auto;
+}
+
+#logo {
+    height: 4.3rem;
+    justify-self: start;
+    mix-blend-mode: difference;
+    cursor: pointer;
+    display: inline;
+}
+
+.container h1,
+.container A {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.55rem;
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #9f9f9f;
+    mix-blend-mode: difference;
+    position: relative;
+}
+
+.container svg {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    bottom: -0.5rem;
+    height: 0.9rem;
+    z-index: 2;
+    display: none;
+}
+
+.container A:hover svg,
+.container A:hover h1 {
+    display: block;
+    color: #2581d7;
+    stroke: #2581d7;
+    mix-blend-mode: difference;
+}
+
+.selected h1 {
+    color: #2581d7 !important;
+}
+
+.selected svg {
+    stroke: #2581d7;
+    display: block;
+    mix-blend-mode: difference;
+}

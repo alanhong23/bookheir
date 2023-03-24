@@ -1,0 +1,272 @@
+.wrapper h1,
+.wrapper h2,
+.wrapper h3,
+.wrapper h4,
+.wrapper h5,
+.wrapper input,
+.wrapper textarea,
+.wrapper button {
+    font-family: "Noto Sans SC";
+    font-style: normal;
+}
+
+.wrapper h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    color: #56331a;
+}
+
+.wrapper h3 {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #717171;
+}
+
+.coming_soon {
+    height: 63.4rem;
+    width: 55.05rem;
+    display: grid;
+    place-items: center;
+    border: 0.1rem solid #56331a;
+    border-radius: 0.7rem;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.7rem;
+    color: #56331a;
+    position: sticky;
+    overflow: hidden;
+    right: 16rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    gap: 12.4rem;
+    margin: 1.5rem 0 0 16rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.wrapper button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    color: #56331a;
+    padding: 0.7rem 2.7rem;
+    border: 0.1rem solid #56331a;
+    border-radius: 0.4rem;
+    background: none;
+}
+
+.wrapper button:hover,
+.add_contact:hover,
+#default_email {
+    background: #56331a;
+    stroke: #fcf8f1;
+    color: #fcf8f1;
+    cursor: pointer;
+}
+
+.add_contact {
+    height: 3rem;
+    width: 3rem;
+    border: 0.1rem solid #56331a;
+    border-radius: 0.5rem;
+    stroke: #56331a;
+    display: grid;
+    place-items: center;
+}
+
+.add_contact svg,
+.add_img svg,
+.img svg {
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+.add_contact svg,
+.add_img svg {
+    transform: rotate(-45deg);
+}
+
+.img {
+    background: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5) -0.05%,
+            rgba(0, 0, 0, 0) 39.21%
+        ),
+        #af7851;
+    border-radius: 0.4rem;
+    width: 11.93rem;
+    height: 11.93rem;
+    position: relative;
+}
+
+.img h4 {
+    position: absolute;
+    bottom: 1.26rem;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.85rem;
+    text-decoration-line: underline;
+    color: #ffffff;
+}
+
+.wrapper textarea,
+.wrapper input {
+    resize: none;
+    border: none;
+    border-bottom: 0.1rem solid #56331a;
+    background: none;
+    /* font-weight: 400;
+    font-size: 2rem;
+    line-height: 3.5rem; */
+    color: #56331a;
+    width: 52.3rem;
+    height: 4rem;
+    overflow: hidden;
+    /* padding: 0.1rem 0; */
+}
+
+.product_name {
+    font-weight: 400;
+    font-size: 2.5rem;
+
+    color: #56331a;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 2rem;
+    padding-bottom: 0.4rem;
+}
+
+.wrapper textarea:focus,
+.wrapper input:focus {
+    outline: none;
+    border-bottom: 0.1rem solid #56331a;
+}
+
+.contact,
+.details,
+.tags,
+.condition,
+.method,
+.img_wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.wrapper h3 {
+    margin-bottom: 0.6rem;
+}
+
+.add_img {
+    border-radius: 0.4rem;
+    width: 11.93rem;
+    height: 11.93rem;
+    background: #56331a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-weight: 300;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+.add_img svg,
+.img svg {
+    stroke: #ffffff;
+}
+
+.img svg {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.comfirm {
+    font-weight: 500;
+    font-size: 1.34rem;
+    text-decoration-line: underline;
+    color: #2b71da;
+}
+
+.sole {
+    background: rgba(239, 135, 135, 0.35);
+    border: 0.1rem solid #c03838;
+    border-radius: 0.4rem;
+    height: 3.1rem;
+    width: 8rem;
+    display: grid;
+    place-items: center;
+
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 0.175em;
+    color: #c03838;
+}
+
+.cancel {
+    font-weight: 400;
+    font-size: 1.35rem;
+    color: #9c9c9c;
+}
+
+.control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.6rem;
+    margin-top: 6.4rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.price h4 {
+    font-weight: 300;
+    font-size: 1.67rem;
+    text-align: center;
+    color: #56331a;
+    align-self: flex-end;
+}
+
+.price input {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2.45rem;
+    width: fit-content;
+    color: #56331a;
+}
+
+.price input::-webkit-outer-spin-button,
+.price input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* special setting for firefox :/ */
+@-moz-document url-prefix() {
+    .price input[type="number"] {
+        -moz-appearance: textfield;
+    }
+}

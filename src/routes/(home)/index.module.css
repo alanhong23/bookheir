@@ -1,0 +1,16 @@
+.items {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(clamp(16.17rem, 15vw + 1rem, 30.6rem), 1fr)
+    );
+    gap: 4.52rem;
+    width: 100%;
+    padding: 0 16rem;
+}
+
+.items_container {
+    display: grid;
+    justify-items: center;
+    margin: 1.5rem 0 0 0;
+}

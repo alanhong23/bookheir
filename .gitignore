@@ -1,0 +1,16 @@
+
+.solid
+
+# dependencies
+/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+*.launch
+.settings/
+
+gitignore
+README.md
+pnpm-lock.yaml
